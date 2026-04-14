@@ -9,7 +9,7 @@ import { AuthService } from './auth.service';
   providedIn: 'root'
 })
 export class OpportunityService {
-  private apiUrl = 'http://localhost:4000/api/opportunities';
+  private apiUrl = 'https://smart-wastemanagement.onrender.com/api';
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: any,

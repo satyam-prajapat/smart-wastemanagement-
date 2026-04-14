@@ -8,7 +8,7 @@ import { WasteRequest } from '../models/waste-request.model';
   providedIn: 'root'
 })
 export class WasteRequestService {
-  private apiUrl = 'http://localhost:4000/api/applications';
+  private apiUrl = 'https://smart-wastemanagement.onrender.com/api';
 
   // We keep the subject if any components bind to it directly with async pipe
   private requestsSubject = new BehaviorSubject<WasteRequest[]>([]);

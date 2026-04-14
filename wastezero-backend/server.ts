@@ -115,7 +115,7 @@ app.use((err: any, req: any, res: any, next: any) => {
   });
 });
 
-httpServer.listen(Number(port), '0.0.0.0', () => {
+httpServer.listen(Number(port), () => {
     console.log(`Backend Express server listening on http://0.0.0.0:${port}`);
     console.log(`Accessible at http://localhost:${port} or http://127.0.0.1:${port}`);
 });
