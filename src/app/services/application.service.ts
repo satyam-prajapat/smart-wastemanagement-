@@ -8,7 +8,7 @@ import { Application } from '../models/application.model';
     providedIn: 'root'
 })
 export class ApplicationService {
-    private apiUrl = 'https://smart-wastemanagement.onrender.com/api';
+    private apiUrl = '/api';
 
     constructor(
         @Inject(PLATFORM_ID) private platformId: any,
