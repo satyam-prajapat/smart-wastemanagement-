@@ -1,0 +1,88 @@
+/* Services Premium Styles */
+.services-hero {
+  background: linear-gradient(rgba(240, 249, 241, 0.8), rgba(255, 255, 255, 1)), 
+              url('https://www.transparenttextures.com/patterns/cubes.png');
+  padding: 100px 0;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #2e7d32, #1b5e20);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08) !important;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.step-item {
+  position: relative;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+}
+
+.bg-light-soft {
+  background-color: #fbfdfb;
+}
+
+.faq-section {
+  background: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #2e7d32;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }

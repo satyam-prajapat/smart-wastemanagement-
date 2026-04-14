@@ -1,0 +1,64 @@
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.extra-small {
+  font-size: 0.7rem;
+}
+
+.ls-wide {
+  letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .profile-premium-wrapper {
+    padding: 1rem !important;
+  }
+}
+
+/* Dark Mode Transitions */
+:host-context(body.dark-mode) .profile-value-box {
+  background: rgba(255, 255, 255, 0.03);
+  color: #f0f4ff;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+:host-context(body.dark-mode) .profile-input {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+:host-context(body.dark-mode) .profile-input:focus {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+:host-context(body.dark-mode) .profile-btn-secondary {
+  background: #1e293b;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f0f4ff;
+}
+
+:host-context(body.dark-mode) .profile-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+:host-context(body.dark-mode) .form-control-sm {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #fff;
+}
+
+:host-context(body.dark-mode) .border-light {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+:host-context(body.dark-mode) .alert-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #63ffb4;
+}
