@@ -1,5 +1,18 @@
 {
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/smartwaste/browser"
+      }
+    }
+  ],
   "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://smart-wastemanagement.onrender.com/api/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
